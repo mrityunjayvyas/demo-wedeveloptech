@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto-Regular.ttf) format('truetype');
+    font-style: normal;    
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto-Medium.ttf) format('truetype');
+    font-style: normal;
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url(./fonts/Roboto-Bold.ttf) format('truetype');
+    font-style: normal;    
+    font-weight: 700;
+}
+
+section{
+    padding: 0px 2%;
+    
+}
+header{
+    text-align: center;
+    padding-top: 20px;
+}
+.dummy-logo img{
+    width: 15%;
+}
+.manuBar{
+    margin-top: 20px;
+    border-top: 2px solid black;
+    border-bottom:  2px solid black;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 20%;
+    font-weight: 600;
+    font-size: 12px;
+}
+.Top-image{
+    width: 100%;
+    margin-top: 20px;
+    height: auto;
+}
+.history{
+    width: 100%;
+    margin-top: 20px;
+    height: auto;
+}
+.Top-image img{
+    padding: 0;
+    object-fit: cover;
+    width: 100%;
+}
+.Welcome{
+    padding: 0 10%;
+    text-align: center;
+}
+.Welcome h1{
+    text-align: center;
+    font-weight: 400;
+ font-size: 4vw;
+ padding-top: 30px;
+ padding-bottom: 10px;
+
+}
+.Showcase{
+    padding: 0 10%;
+    text-align: center;
+}
+
+.history h1{
+
+text-align: center;
+font-weight: 400;
+ font-size: 4vw;
+ padding-top: 30px;
+ padding-bottom: 10px;
+}
+
+.Welcome.content div {
+    width: 20%;
+    text-align: left;
+}
+.Welcome .content img {
+    width: 35%;
+    float: right;
+    margin: 0px 0px 15px 20px;
+}
+.Welcome .content p{
+    text-align: justify;
+}
+.underline{
+    margin:auto;
+    margin-bottom: 30px;
+    border: 2px solid black;
+    background-color: black;
+    height: px;
+    width: 30px;
+}
+button{
+    font-weight: 500;
+    margin-top: 30px;
+    padding: 10px 15px 10px 15px;
+    background: transparent;
+}
+h2{
+    padding-top: 80px;
+    padding-bottom: 5px;
+    font-size: 35px;
+    font-weight: 400;
+}
+.Showcase-image{
+    margin-top:0;
+    display: flex;
+    justify-content: space-around;
+}
+.Showcase-image img{
+    
+    border-radius: 50%;
+    width: 25%;
+}
+.history{
+    margin-top: 50px;
+    text-align: justify;
+}
+.history p{
+    text-align: justify;
+}
+.footer{
+    border-top: 2px solid black;
+    border-bottom:  2px solid black;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.footerLeft{
+    text-align: center;
+    padding: 1% 2%;
+
+}
+.footerRight{
+    display: flex;
+    padding: 1% 2%;
+    text-align: center;
+}
+.footerRight p2{
+    margin-left: 5px;
+    color: rgb(229, 166, 166);
+    text-align: justify;
+}
+.Home{
+color: rgb(238, 156, 127);
+}
+#menuButton{
+    display: none;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    padding-bottom: 5px;
+    align-self: center;
+}
+.Top-image{
+    text-align: justify;
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    /* For tablets: */
+    .manuBar{
+        display: none;
+    }
+    header {
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+    }
+    #menuButton{
+        display:block;
+
+    }
+    .dummy-logo img{
+        width: 25%;
+    }
+    .Welcome{
+        padding: 0 2%;
+    }
+    .Welcome h1{
+         font-size: 6vw;
+        }
+    .footer{
+        font-size: 50%;
+        justify-content: space-between;
+
+    }
+    .footerLeft{
+        left: 0;
+    }
+    .Showcase-image img{
+    
+        width: 30%;
+    }
+    
+    
+  }
+  @media only screen and (max-width: 480px) {
+    .Showcase-image img{
+
+        width: 40%;
+        
+    }
+    .Showcase-image{
+       flex-wrap: wrap;
+    }
+    .history p{
+        width: 100%;
+        font-size: 10px;
+    }
+    .Welcome .content p{
+        font-size: 10px;
+    }
+  }
